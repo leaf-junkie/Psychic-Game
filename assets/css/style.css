@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+    line-height: 200%;
+    background-image: url(../images/smokeyquartz.jpg);
+}
+
+.header {
+    text-align: center;
+    background-color: #666;
+    opacity: .5;
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 48px;
+}
+
+.text {
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+}
