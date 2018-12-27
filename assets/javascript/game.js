@@ -3,12 +3,12 @@ document.onkeyup = keyUpHandler;
 
 // Generate random magic letter
 var letters = "abcdefghijklmnopqrstuvwxyz";
+letters = letters.toUpperCase();
 var randomIndex = Math.floor(Math.random() * letters.length);
 var magicLetter = letters[randomIndex];
 
 var guessedLetters = [];
 
-// console.log(etters.toLowerCase());
 console.log(randomIndex);
 console.log(magicLetter);
 
@@ -16,34 +16,28 @@ var guessesRemaining = 10;
 
 // Get input from user
 function keyUpHandler(event) {
-    // Add key to guessedLetters array
+    // Show pressed keys in console
     console.log(guessedLetters);
-    // Display guesses in the browser
-    document.getElementById("guessedLetters").innerHTML;
 
     // Check if key is the magic letter
-    if (event.key === magicLetter) {
+    if (event.key.toUpperCase() === magicLetter.toUpperCase()) {
         // If it is the magic letter, win (call a win function)
         win(); 
+        reset();
     } else {
         // If not, decrement guess count
         guessesRemaining -= 1;
     }
 
-    // If zero guesses left, lose (call a lose function)
+    // If zero guesses left, lose (call a lose function) and reset guesses remaining
     if (guessesRemaining === 0) {        
         lose();
-        // Reset guesses remaining - could have here or on the win and lose functions
-        // document.getElementById("guessesRemaining").counterReset;
+        reset();
     }
     
     // Display the number of remaining guesses under "Guesses Remaining"
-    console.log(guessesRemaining);
+    console.log("Number of guesses remaining: " + guessesRemaining);
     document.getElementById("guessesRemaining").innerHTML = guessesRemaining;
-
-    // Reset counter when guessesRemaining equals 0
-    // counterReset 
-    // document.getElementById("guessesRemaining").innerHTML = ;
 
     // Ignore redundant input from user
     // On key press, check if the letter has already been pressed
@@ -78,8 +72,20 @@ function lose() {
     document.getElementById("lossCount").innerHTML = losses;
 }
 
-// reset(); 
-// var reset = function() {
-//     a = 10;
-//     document.getElementById("guessesRemaining").innerHTML = a;
-// }
+function reset() {
+    // Reset guesses remaining
+    guessesRemaining = 10;
+    document.getElementById("guessesRemaining").counterReset = guessesRemaining;
+
+    // Reset remaining guesses 
+    guessesRemaining = 10;
+    document.getElementById("guessesRemaining").innerHTML = guessesRemaining;
+
+    // Empty guessed letters array
+    guessedLetters = [];
+
+    // Select new magic letter
+    randomIndex = Math.floor(Math.random() * letters.length);
+    magicLetter = letters[randomIndex];
+    console.log(magicLetter);
+}
