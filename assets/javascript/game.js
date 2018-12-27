@@ -8,7 +8,7 @@ var magicLetter = letters[randomIndex];
 
 var guessedLetters = [];
 
-// console.log(letters.toLowerCase());
+// console.log(etters.toLowerCase());
 console.log(randomIndex);
 console.log(magicLetter);
 
@@ -17,19 +17,17 @@ var guessesRemaining = 10;
 // Get input from user
 function keyUpHandler(event) {
     // Add key to guessedLetters array
-    console.log(guessedLetters.push(event.key));
+    console.log(guessedLetters);
     // Display guesses in the browser
-    document.getElementById("guessedLetters").innerHTML += event.key;
+    document.getElementById("guessedLetters").innerHTML;
 
     // Check if key is the magic letter
     if (event.key === magicLetter) {
-        // If it is, win (call a win function)
+        // If it is the magic letter, win (call a win function)
         win(); 
     } else {
         // If not, decrement guess count
         guessesRemaining -= 1;
-        // Display number of guesses remaining under "Guesses Remaining"
-        document.getElementById("guessesRemaining").innerHTML = guessesRemaining;
     }
 
     // If zero guesses left, lose (call a lose function)
@@ -37,6 +35,30 @@ function keyUpHandler(event) {
         lose();
         // Reset guesses remaining - could have here or on the win and lose functions
         // document.getElementById("guessesRemaining").counterReset;
+    }
+    
+    // Display the number of remaining guesses under "Guesses Remaining"
+    console.log(guessesRemaining);
+    document.getElementById("guessesRemaining").innerHTML = guessesRemaining;
+
+    // Reset counter when guessesRemaining equals 0
+    // counterReset 
+    // document.getElementById("guessesRemaining").innerHTML = ;
+
+    // Ignore redundant input from user
+    // On key press, check if the letter has already been pressed
+    if (guessedLetters.includes(event.key)) {    
+        // If it has not been pressed, return true
+        return;
+    } else {
+        // If it has been pressed, return false
+        guessedLetters.push(event.key);
+
+        // Display number of guesses remaining under "Your Guesses Thus Far"
+        guessedLetters.forEach(function(letter) {
+        console.log(letter);
+        document.getElementById("guessedLetters").innerHTML = letter;
+        });
     }
 }
 
@@ -54,17 +76,6 @@ function lose() {
     var losses = parseInt(document.getElementById("lossCount").innerHTML);
     losses += 1;
     document.getElementById("lossCount").innerHTML = losses;
-}
-
-// Ignore redundant input from user
-var a = letters;
-
-for (a = 0; a )    
-    // On key press, check if the letter has already been pressed
-    
-        // If it has not been pressed, return true
-
-        // If it has been pressed, return false
 }
 
 // reset(); 
