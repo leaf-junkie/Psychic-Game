@@ -15,6 +15,10 @@ console.log(magicLetter);
 var guessesRemaining = 10;
 document.getElementById("guessesRemaining").innerHTML = guessesRemaining;
 
+// var loseScreen = 
+
+// var winScreen = 
+
 // This is the logic for the game
 // Get input from user when a key is pressed
 function keyUpHandler(event) {
@@ -66,7 +70,9 @@ function win() {
     var wins = parseInt(document.getElementById("winCount").innerHTML);
     wins += 1;
     document.getElementById("winCount").innerHTML = wins;
-    // alert("As I suspected...You knew which letter I had in mind. Would you like to play again?");
+
+    // Display win screen
+    
 }
 
 function lose() {
@@ -75,7 +81,9 @@ function lose() {
     var losses = parseInt(document.getElementById("lossCount").innerHTML);
     losses += 1;
     document.getElementById("lossCount").innerHTML = losses;
-    // alert("Hmm...Perhaps I was mistaken. You were unable to determine which letter I was thinking of. Would you like to try again?");
+    
+    // Display lose screen
+
 }
 
 function reset() {
@@ -92,3 +100,7 @@ function reset() {
     magicLetter = letters[randomIndex];
     console.log(magicLetter);
 }
+
+// function click() {
+
+// }

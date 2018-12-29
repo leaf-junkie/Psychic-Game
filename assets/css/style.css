@@ -58,6 +58,12 @@ h3 {
     font-size: 32px;
 }
 
+p {
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
 /* Style the endgame screens ("You Win" or "Game Over") that pop up when the user wins or loses */
 #winScreen, 
 #loseScreen {
@@ -81,16 +87,21 @@ h3 {
     font-family: monospace;
 }
 
+button {
+    background-color: #222;
+    color: #fff;
+    font-family: monospace;
+    font-size: 24px;
+    border: 2px solid #fff;
+    width: 100px;
+    padding: 5px;
+    margin: 5px;
+}
+
 footer {
     background-color: #54544e;
     position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
-}
-
-p {
-    color: #fff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
 }
