@@ -14,6 +14,8 @@ console.log(magicLetter);
 
 var guessesRemaining = 10;
 
+// var nonLetters = event.keys[];
+
 // Get input from user
 function keyUpHandler(event) {
     // Show pressed keys in console
@@ -51,10 +53,13 @@ function keyUpHandler(event) {
         // Display number of guesses remaining under "Your Guesses Thus Far"
         guessedLetters.forEach(function(letter) {
         console.log(letter);
-        document.getElementById("guessedLetters").innerHTML = letter;
+        document.getElementById("guessedLetters").innerHTML = guessedLetters + " ";
         });
-    }
-}
+
+    // // Ignore non-letter keys
+    // if (nonLetters.includes(event.key)) {
+    // }
+
 
 function win() {
     console.log("You win!");
