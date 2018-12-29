@@ -12,43 +12,50 @@
 
     <body>
         <header class="header">
-            <h1>Psychic Game</h1>
+            <h1 id="header">Psychic Game</h1>
         </header>
         <br>
-        <div class="container">
-            <h2>Do you possess the ability?</h2>
-            <h2>Try to guess which letter I am thinking of.</h2>
-            <br>
+        <div id="letsPlay">
+            <h1 class="lets-play">Do you possess the ability?</h1>
+            <h1 class="lets-play">Try to guess which letter I am thinking of.</h1>
         </div>
         <!-- <button>Do you possess the ability?</button> -->
         <!-- <button>Try to guess which letter I am thinking of.</button> -->
         <div class="container">   
             <div class="guessed-letters">
-                <h2>Your Guesses Thus Far...</h2>
+                <h2>Your Guesses Thus Far:</h2>
                 <div>
-                    <h3 id="guessedLetters"></h3>
+                    <h3 id="guessedLetters">...</h3>
                 </div>
             </div>
-            <br>
             <div class="guesses-remaining">
                 <h2>Guesses Remaining:</h2>
                 <div>
                     <h3 id="guessesRemaining"></h3>
                 </div>
             </div>
-            <br>
             <div class="win-count">
-                <h2>Wins</h2>
+                <h2>Wins:</h2>
                 <div>
                     <h3 id="winCount">0</h3>
                 </div>
             </div>            
             <div class="loss-count">
-                <h2>Losses</h2>
+                <h2>Losses:</h2>
                 <div>
                     <h3 id="lossCount">0</h3>    
                 </div>
             </div>
+        </div>
+        <div id="winScreen">
+            <h1 class="endgame-heading">YOU WIN</h1>
+            <p class="endgame-text">As I suspected...You are indeed clairvoyant.</p>
+            <p class="endgame-text">Would you like to play again?</p>
+        </div>
+        <div id="loseScreen">
+            <h1 class="endgame-heading">GAME OVER</h1>
+            <p class="endgame-text">Hmm...Perhaps I was mistaken. You were unable to determine which letter I was thinking of.</p>
+            <p class="endgame-text">Would you like to try again?</p>
         </div>
         <!-- <embed loop="true" src="../music/ofelias-dream.mp3" hidden="true" type="video/quicktime"></embed> -->
         <footer>

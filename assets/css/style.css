@@ -5,15 +5,12 @@ body {
     margin-top: 200px;
 }
 
+/* Style the header div */
 .header {
     text-align: center;
-    background-color: #666;
-    opacity: .5;
-    color: #fff;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 48px;
+    background-color: #54544e;
     padding: 5px;
-    position: fixed;
+    position: absolute;
     height: 160px;
     top: 0;
     left: 0;
@@ -21,22 +18,72 @@ body {
     bottom: 100%;
 }
 
-h2,
-h3 {
+/* Style the text inside of the header */
+#header {
     color: #fff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 86px;
 }
 
-div {
-    margin: 50px;
+/* Style the subheading text */
+.lets-play {
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 42px;
+    text-shadow: 4px 4px 4px #222;
+}
+
+#letsPlay {
+    margin: 10%;
+}
+
+/* Style the div that holds all of the game play info */
+.container {
+    background-color: #d2d3c3;
+    padding: 25px;
+    opacity: .8;
+    margin: 10%;
+}
+
+h1 {
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 32px;
+}
+
+h2,
+h3 {
+    color: #333;
+    font-family: monospace;
+    font-size: 32px;
+}
+
+/* Style the endgame screens ("You Win" or "Game Over") that pop up when the user wins or loses */
+#winScreen, 
+#loseScreen {
+    background-color: #d2d3c3;
+    padding: 150px 50px;
+    margin-top: 150px;
+    opacity: .9;
+    z-index: 100;
+
+    /* visibility: hidden; */
+}
+
+.endgame-heading, 
+.endgame-text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #111;
+    font-size: 36px;
+}
+
+.endgame-heading {
+    font-family: monospace;
 }
 
 footer {
-    background-color: #666;
-    opacity: 0.7;
+    background-color: #54544e;
     position: fixed;
-    height: 50px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -47,38 +94,3 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
 }
-
-/* .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-button {
-    background-color: #fff;
-    color: #444;
-    border: none;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 24px;
-    padding: 25px;
-    border: 2px solid #222;
-}
-
-button:hover {
-    background-color: #ddd;
-    color: #333;
-    background-color: #ddd;
-    color: #333;
-}
-
-button:active {
-    background-color: #ddd;
-    color: #333;
-    border: 2px solid #222;
-}
-
-button:focus {
-    background-color: #fff;
-    color: #444;
-    border: 2px solid #222;
-} */
