@@ -3,11 +3,11 @@
     <head>
         <title>Psychic Game</title>
 
-        <!-- Link to Default CSS -->
-        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+        <!-- Link to stylesheet -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-        <!-- Link to Reset CSS -->
-        <link href="assets/css/reset.css" rel="stylesheet" type="text/css">
+        <!-- Link to stylesheet with media queries -->
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css" media="screen">
     </head>
 
     <body>
@@ -19,29 +19,27 @@
             <h1 class="lets-play">Do you possess the ability?</h1>
             <h1 class="lets-play">Try to guess which letter I am thinking of.</h1>
         </div>
-        <!-- <button>Do you possess the ability?</button> -->
-        <!-- <button>Try to guess which letter I am thinking of.</button> -->
         <div class="container">   
             <div class="guessed-letters">
-                <h2>Your Guesses Thus Far:</h2>
+                <h2>Your Guesses Thus Far</h2>
                 <div>
                     <h3 id="guessedLetters">...</h3>
                 </div>
             </div>
             <div class="guesses-remaining">
-                <h2>Guesses Remaining:</h2>
+                <h2>Guesses Remaining</h2>
                 <div>
                     <h3 id="guessesRemaining"></h3>
                 </div>
             </div>
             <div class="win-count">
-                <h2>Wins:</h2>
+                <h2>Wins</h2>
                 <div>
                     <h3 id="winCount">0</h3>
                 </div>
             </div>            
             <div class="loss-count">
-                <h2>Losses:</h2>
+                <h2>Losses</h2>
                 <div>
                     <h3 id="lossCount">0</h3>    
                 </div>
@@ -51,18 +49,18 @@
             <h1 class="endgame-heading">YOU WIN</h1>
             <p class="endgame-text">As I suspected...You are indeed clairvoyant.</p>
             <p class="endgame-text">Would you like to play again?</p>
-            <button class="button" onclick="reset()">YES</button>
+            <button class="button" onclick="reset()">CONTINUE</button>
         </div>
         <div id="loseScreen" style="visibility: hidden;">
             <h1 class="endgame-heading">GAME OVER</h1>
             <p class="endgame-text">Hmm...Perhaps I was mistaken. You were unable to determine which letter I was thinking of.</p>
             <p class="endgame-text">Would you like to try again?</p>
-            <button class="button" onclick="reset()">YES</button>
+            <button class="button" onclick="reset()">TRY AGAIN</button>
         </div>
-        <!-- <embed loop="true" src="../music/ofelias-dream.mp3" hidden="true" type="video/quicktime"></embed> -->
         <footer>
             <p>© Julie Ragsdale 2018 | Music: https://www.bensound.com</p>
         </footer>
+        <!-- <embed loop="true" src="../music/ofelias-dream.mp3" hidden="true" type="video/quicktime"></embed> -->
     </body>
     <script src="assets\javascript\game.js" type="text/javascript"></script>
 </html>

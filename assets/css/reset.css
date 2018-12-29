@@ -1,0 +1,86 @@
+/* Media Queries */
+
+/* smartphones, iPhone, portrait 480x320 phones portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:320px)  {
+    body {
+        line-height: 250%;
+    }
+
+    #header {
+        font-size: 75px;
+    }
+
+    .lets-play,
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    footer {
+        height: 160px;
+    }
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:641px)  {
+    #header {
+
+    }
+
+    .lets-play {
+
+    }
+
+    h3 {
+
+    }
+
+    footer {
+
+    }
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:961px)  {
+    #header {
+
+    }
+
+    .lets-play {
+
+    }
+
+    h3 {
+
+    }
+
+    footer {
+
+    }
+}
+
+/* hi-res laptops and desktops */
+@media (min-width:1800px) {
+    body {
+        background-image: url(../images/orbs.jpg);
+    }
+
+    #header {
+
+    }
+
+    .lets-play {
+
+    }
+
+    h3 {
+
+    }
+
+    footer {
+
+    }
+}
