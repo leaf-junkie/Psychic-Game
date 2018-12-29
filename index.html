@@ -47,19 +47,17 @@
                 </div>
             </div>
         </div>
-        <div id="winScreen" class="clearfix" style="float:left">
+        <div id="winScreen" style="visibility: hidden">
             <h1 class="endgame-heading">YOU WIN</h1>
             <p class="endgame-text">As I suspected...You are indeed clairvoyant.</p>
             <p class="endgame-text">Would you like to play again?</p>
-            <button class="button-yes">YES</button>
-            <button class="button-no">NO</button>
+            <button class="button" onclick="reset()">YES</button>
         </div>
-        <div id="loseScreen" class="clearfix" style="float:left">
+        <div id="loseScreen" style="visibility: hidden;">
             <h1 class="endgame-heading">GAME OVER</h1>
             <p class="endgame-text">Hmm...Perhaps I was mistaken. You were unable to determine which letter I was thinking of.</p>
             <p class="endgame-text">Would you like to try again?</p>
-            <button class="button-yes">YES</button>
-            <button class="button-no">NO</button>
+            <button class="button" onclick="reset()">YES</button>
         </div>
         <!-- <embed loop="true" src="../music/ofelias-dream.mp3" hidden="true" type="video/quicktime"></embed> -->
         <footer>
