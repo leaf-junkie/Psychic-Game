@@ -2,7 +2,8 @@ body {
     text-align: center;
     line-height: 200%;
     background-image: url(../images/smokeyquartz.jpg);
-    margin-top: 200px;
+    background-position-y: 125px;
+    margin-top: 150px;
 }
 
 /* Style the header div */
@@ -67,24 +68,29 @@ p {
 /* Style the endgame screens ("You Win" or "Game Over") that pop up when the user wins or loses */
 #winScreen, 
 #loseScreen {
-    background-color: #d2d3c3;
-    padding: 150px 50px;
-    margin-top: 150px;
-    opacity: .9;
-    z-index: 100;
+    background-color: #222;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 
 .endgame-heading, 
 .endgame-text {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #111;
+    color: #d2d3c3;
     font-size: 36px;
+    margin: 10%;
 }
 
 .endgame-heading {
+    margin-top: 450px;
     font-family: monospace;
+    font-size: 150px;
 }
 
 button {
@@ -104,4 +110,27 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 2;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Media Queries */
+/* Smartphones */
+@media screen and (min-width: 320px) {
+
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) {
+
+}
+
+/* Desktops and laptops */
+@media screen and (max-width: 1224px) {
+    
 }

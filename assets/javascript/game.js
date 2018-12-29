@@ -15,9 +15,12 @@ console.log(magicLetter);
 var guessesRemaining = 10;
 document.getElementById("guessesRemaining").innerHTML = guessesRemaining;
 
-// var loseScreen = 
+var buttonYes = document.getElementsByClassName("button-yes").onclick = click();
+var buttonNo = document.getElementsByClassName("button-no").onclick = click();
 
-// var winScreen = 
+// var winScreen = document.getElementById("winScreen") = ;
+
+// var loseScreen = document.getElementById("loseScreen") = ;
 
 // This is the logic for the game
 // Get input from user when a key is pressed
