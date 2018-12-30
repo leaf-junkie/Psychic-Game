@@ -7,7 +7,11 @@
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
         <!-- Link to stylesheet with media queries -->
-        <link rel="stylesheet" type="text/css" href="assets/css/reset.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen (max-width: 980px)">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen (max-width: 768px)">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen (max-width: 480px)">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     <body>
@@ -17,6 +21,7 @@
         <br>
         <div id="letsPlay">
             <h1 class="lets-play">Do you possess the ability?</h1>
+            <br>
             <h1 class="lets-play">Try to guess which letter I am thinking of.</h1>
         </div>
         <div class="container">   
@@ -58,7 +63,7 @@
             <button class="button" onclick="reset()">TRY AGAIN</button>
         </div>
         <footer>
-            <p>© Julie Ragsdale 2018 | Music: https://www.bensound.com</p>
+            <p class="footer">© Julie Ragsdale 2018 | Music: https://www.bensound.com</p>
         </footer>
         <!-- <embed loop="true" src="../music/ofelias-dream.mp3" hidden="true" type="video/quicktime"></embed> -->
     </body>

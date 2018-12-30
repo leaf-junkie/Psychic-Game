@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    line-height: 200%;
+    line-height: 150%;
     background-image: url(../images/orbs.jpg);
     background-position-y: 125px;
     margin-top: 150px;
@@ -10,9 +10,8 @@ body {
 .header {
     text-align: center;
     background-color: #54544e;
-    padding: 5px;
     position: absolute;
-    height: 160px;
+    height: 250px;
     top: 0;
     left: 0;
     right: 0;
@@ -23,19 +22,20 @@ body {
 #header {
     color: #fff;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 86px;
+    font-size: 150px;
+    text-shadow: 4px 4px 4px #888;
 }
 
 /* Style the subheading text */
 .lets-play {
     color: #fff;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 42px;
-    text-shadow: 4px 4px 4px #222;
+    font-size: 68px;
 }
 
 #letsPlay {
-    margin: 10%;
+    margin: 200px;
+    margin-bottom: 125px;
 }
 
 /* Style the div that holds all of the game play info */
@@ -43,7 +43,7 @@ body {
     background-color: #d2d3c3;
     padding: 25px;
     opacity: .8;
-    margin: 10%;
+    margin: 25px 550px;
 }
 
 h1 {
@@ -104,15 +104,83 @@ button {
 
 footer {
     background-color: #54544e;
+    border-top: 8px solid #fff;
     position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
+    height: 100px;
     z-index: 2;
 }
 
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
+.footer {
+    font-size: 18px;
+    color: #999;
+    margin-top: 35px; 
+}
+
+/* Media Queries */
+
+/* Medium devices, like desktops and laptops */
+@media screen and (max-width: 1440px) {
+    
+    
+}
+
+/* small devices, like tablets and e-readers */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-image: url(../images/smokeyquartz.jpg);
+        line-height: 300%;
+    }
+
+    .lets-play {
+        font-size: 36px;
+    }
+
+    h2, 
+    h3 {
+        font-size: 24px;
+        text-shadow: 4px 4px 4px #222;
+    }
+
+    footer {
+        height: 100px;
+    }
+}
+
+/* extra small devices, like smartphones */
+@media screen and (max-width: 480px) {
+    body {
+        line-height: 275%;
+        background-image: url(../images/smokeyquartz.jpg);
+        margin-top: 150px;
+    }
+
+    .header {
+        height: 150px;
+        padding-top: 35px;
+    }
+
+    #header {
+        font-size: 58px;
+    }
+
+    .lets-play,
+    h2 {
+        font-size: 22px;
+        text-shadow: 4px 4px 4px #222;
+    }
+
+    .container {
+        padding: 5px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    footer {
+        height: 75px;
+    }
 }
