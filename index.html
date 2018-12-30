@@ -52,15 +52,18 @@
                 </div>
             </div>
         </div>
-        <div id="winScreen" style="visibility: hidden">
+        <div id="winScreen" style="visibility: ">
             <h1 class="endgame-heading">YOU WIN</h1>
             <p class="endgame-text">As I suspected...You are indeed clairvoyant.</p>
+            <br>
             <p class="endgame-text">Would you like to play again?</p>
             <button class="button" onclick="reset()">CONTINUE</button>
         </div>
         <div id="loseScreen" style="visibility: hidden;">
             <h1 class="endgame-heading">GAME OVER</h1>
-            <p class="endgame-text">Hmm...Perhaps I was mistaken. You were unable to determine which letter I was thinking of.</p>
+            <p class="endgame-text">Hmm...Perhaps I was mistaken.</p>
+            <p class="endgame-text">You were unable to determine which letter I was thinking of.</p>
+            <br>
             <p class="endgame-text">Would you like to try again?</p>
             <button class="button" onclick="reset()">TRY AGAIN</button>
         </div>
