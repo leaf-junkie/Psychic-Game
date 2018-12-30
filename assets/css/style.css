@@ -4,6 +4,8 @@ body {
     background-image: url(../images/orbs.jpg);
     background-position-y: 125px;
     margin-top: 150px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* Style the header div */
@@ -11,11 +13,11 @@ body {
     text-align: center;
     background-color: #54544e;
     position: absolute;
-    height: 250px;
     top: 0;
     left: 0;
     right: 0;
     bottom: 100%;
+    border-bottom: 4px solid #fff;
 }
 
 /* Style the text inside of the header */
@@ -26,6 +28,12 @@ body {
     text-shadow: 4px 4px 4px #888;
 }
 
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+}
+
 /* Style the subheading text */
 .lets-play {
     color: #fff;
@@ -34,8 +42,10 @@ body {
 }
 
 #letsPlay {
-    margin: 200px;
+    margin-top: 200px;
     margin-bottom: 125px;
+    width: 100%;
+    position: absolute;
 }
 
 /* Style the div that holds all of the game play info */
@@ -43,7 +53,10 @@ body {
     background-color: #d2d3c3;
     padding: 25px;
     opacity: .8;
-    margin: 25px 550px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 475px;
+    position: relative;
 }
 
 h1 {
@@ -61,7 +74,7 @@ h3 {
 
 p {
     color: #fff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 14px;
 }
 
@@ -121,66 +134,70 @@ footer {
 
 /* Media Queries */
 
-/* Medium devices, like desktops and laptops */
-@media screen and (max-width: 1440px) {
+/* Hi resolution laptops and desktops */
+@media screen and (min-width: 1025px) {
+    .header {
+        height: 150px;
+    }
+
+    #header {
+        font-size: 100px;
+    }
     
-    
+    .lets-play {
+        font-size: 48px;
+    }
 }
 
-/* small devices, like tablets and e-readers */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+/* Medium devices, like desktops and laptops */
+@media screen and (min-width: 963px) and (max-width: 1024px) {
     body {
         background-image: url(../images/smokeyquartz.jpg);
-        line-height: 300%;
+    }
+    
+    .header {
+        height: 150px;
+    }
+
+    #header {
+        font-size: 100px;
+    }
+    
+    .lets-play {
+        font-size: 48px;
+    }
+
+    .container {
+        margin: 25px 400px;
+    }
+}
+
+/* small devices, like ipads, tablets and e-readers */
+@media screen and (min-width: 504px) and (max-width: 962px) {
+    body {
+        background-image: url(../images/smokeyquartz.jpg);
+        line-height: 200%;
+        margin-top: 5px;
+    }
+
+    .header {
+        height: 150px;
+    }    
+    
+    #header {
+        font-size: 80px;
     }
 
     .lets-play {
-        font-size: 36px;
+        font-size: 32px;
     }
 
     h2, 
     h3 {
         font-size: 24px;
-        text-shadow: 4px 4px 4px #222;
     }
 
     footer {
         height: 100px;
-    }
-}
-
-/* extra small devices, like smartphones */
-@media screen and (max-width: 480px) {
-    body {
-        line-height: 275%;
-        background-image: url(../images/smokeyquartz.jpg);
-        margin-top: 150px;
-    }
-
-    .header {
-        height: 150px;
-        padding-top: 35px;
-    }
-
-    #header {
-        font-size: 58px;
-    }
-
-    .lets-play,
-    h2 {
-        font-size: 22px;
-        text-shadow: 4px 4px 4px #222;
-    }
-
-    .container {
-        padding: 5px;
-    }
-
-    h3 {
-        font-size: 18px;
-    }
-
-    footer {
-        height: 75px;
     }
 }
