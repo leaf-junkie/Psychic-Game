@@ -11,21 +11,20 @@ body {
 /* Style the header div */
 .header {
     text-align: center;
-    background-color: #54544e;
+    background-color: #222;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 100%;
-    border-bottom: 4px solid #fff;
 }
 
 /* Style the text inside of the header */
 #header {
     color: #fff;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 150px;
-    text-shadow: 4px 4px 4px #888;
+    font-family: "Nosifer";
+    font-size: 100px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .wrapper {
@@ -35,10 +34,11 @@ body {
 }
 
 /* Style the subheading text */
-.lets-play {
+.subtitle {
     color: #fff;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 68px;
+    font-family: 'Special Elite';
+    font-size: 42px;
+    font-weight: 400;
 }
 
 #letsPlay {
@@ -50,12 +50,13 @@ body {
 
 /* Style the div that holds all of the game play info */
 .container {
-    background-color: #d2d3c3;
+    background-color: #ebebeb;
+    color: #111;
     padding: 25px;
-    opacity: .8;
+    border-radius: 10px;
     width: 50%;
     margin: 0 auto;
-    margin-top: 475px;
+    margin-top: 40%;
     position: relative;
 }
 
@@ -92,31 +93,34 @@ p {
 
 .endgame-heading, 
 .endgame-text {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #d2d3c3;
-    font-size: 42px;
+    font-family: "Special Elite";
+    color: #ebebeb;
+    font-size: 32px;
 }
 
 .endgame-heading {
-    margin-top: 450px;
-    font-family: monospace;
-    font-size: 150px;
+    font-family: "Nosifer";
+    margin-top: 40%;
+    font-size: 100px;
 }
 
 button {
     background-color: #222;
-    color: #fff;
+    color: #ebebeb;
     font-family: monospace;
     font-size: 24px;
-    border: 2px solid #fff;
+    border: 2px solid #ebebeb;
     width: 150px;
     padding: 5px;
     margin: 5px;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 footer {
-    background-color: #54544e;
-    border-top: 8px solid #fff;
+    background-color: #222;
     position: fixed;
     left: 0;
     right: 0;
@@ -127,7 +131,7 @@ footer {
 
 .footer {
     font-size: 18px;
-    color: #999;
+    color: #ebebeb;
     margin-top: 35px; 
 }
 
